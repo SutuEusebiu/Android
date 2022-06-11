@@ -114,8 +114,8 @@ class CreateTicketFragment : BaseFragment()  {
             saveNote()
         }
 
-        shareNoteBtn.setOnClickListener{
-            val storage = "NOTE: "+ "Title:"+ (tickets?.name) +" Content:"+ (tickets?.firstNumber)
+        shareTicketBtn.setOnClickListener{
+            val storage = "Biletul: "+ (tickets?.name) +" Cu numerele:"+ (tickets?.firstNumber) + " " + (tickets?.secondNumber)+ " " + (tickets?.thirdNumber)+ " " + (tickets?.fourthNumber)+ " " + (tickets?.fifthNumber)
             val shareIntent = Intent()
             shareIntent.action = Intent.ACTION_SEND
             shareIntent.type = "text/plain"

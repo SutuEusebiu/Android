@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/drawer_layout"
-    android:background="@color/design_default_color_primary_dark">
+    android:background="@color/teal_700">
 
     <include
         layout="@layout/content_main"/>

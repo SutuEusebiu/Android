@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.item_rv_notes.view.*
+import kotlinx.android.synthetic.main.item_rv_tickets.view.*
 import ro.androidproject.myapplication.R
 import ro.androidproject.myapplication.entities.Tickets
 
@@ -23,7 +23,7 @@ class TicketsAdapter () : RecyclerView.Adapter<TicketsAdapter.TicketsAdapterView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TicketsAdapterViewHolder {
        return TicketsAdapterViewHolder(
-           LayoutInflater.from(parent.context).inflate(R.layout.item_rv_notes,parent,false)
+           LayoutInflater.from(parent.context).inflate(R.layout.item_rv_tickets,parent,false)
        )
     }
 
@@ -40,7 +40,7 @@ class TicketsAdapter () : RecyclerView.Adapter<TicketsAdapter.TicketsAdapterView
         holder.itemView.tvtitle.text = arrList[position].name
         holder.itemView.tvcontent.text = arrList[position].details
 
-            holder.itemView.cardView.setCardBackgroundColor(Color.LTGRAY)
+//            holder.itemView.cardView.setCardBackgroundColor(Color.)
 
 
 

@@ -63,7 +63,7 @@ class HomeFragment : BaseFragment(){
 
         ticketsAdapter!!.setOnClickListener(onClicked)
 
-        btnCreateNote.setOnClickListener {
+        btnCreateTicket.setOnClickListener {
             replacefragment(CreateTicketFragment.newInstance(),false)
         }
 
